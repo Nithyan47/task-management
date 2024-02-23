@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-form {
+    margin-bottom: 15px;
+}
+
+.task-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.task-form input[type="time"] {
+    background-color: #fff;
+    color: #000;
+    padding: 8px;
+
+}
+
+.task-form input[type="time"]::-webkit-datetime-edit-text {
+    color: #000 !important;
+}
+
+
+.task-form input,
+.task-form select,
+.task-form button {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.flatpickr-day.selected {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+.task-list {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.task-list h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.priority-low {
+    color: #0a8c08;
+}
+
+.priority-medium {
+    color: #e68a00;
+}
+
+.priority-high {
+    color: #3498db;
+}

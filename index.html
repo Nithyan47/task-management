@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Management System</title>
+   </head>
+
+ <body>
+    <div class="container">
+        <h1>Task Management System</h1>
+        <div class="task-form">
+            <label for="task">Task:</label>
+            <input type="text" id="task" placeholder="Enter task" required>
+            <label for="deadline-date">Deadline Date:</label>
+            <input type="text" id="deadline-date" class="flatpickr" required>
+            <label for="deadline-time">Deadline Time:</label>
+            <input type="time" id="deadline-time" required>
+            <label for="priority">Priority:</label>
+            <select id="priority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="addTaskBtn" onclick="addTask()">Add Task</button>
+        </div>
+        <div class="task-list">
+            <h2>Task List</h2>
+            <ul id="tasks"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>
